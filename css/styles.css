@@ -1,0 +1,11 @@
+/** agreguemos nuestras variables de colores y la fuente **/
+:root {
+    --Negro: #0D0D0D;
+    --Blanco: #F2F1F0;
+    --RosaPalido: #F294C0;
+    --RosaFuerte: #F294C0;
+    --RosaRojo: #F2055C;
+
+    --fuente: 'Staatliches', cursive;
+}
+
