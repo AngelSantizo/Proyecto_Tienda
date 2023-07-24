@@ -9,3 +9,56 @@
     --fuente: 'Staatliches', cursive;
 }
 
+/**Definiendo las goblales, las inigualables tanto de size box y de medicion rem**/
+html {
+    box-sizing: border-box;
+
+    /**recordar poner esto para poder utilizar bien los  rem, 1 rem == 10 px**/
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/**Globales**/
+body {
+    background-color: var(--Negro); /**color principal de la pagina, el background**/
+    font-size: 1.6rem; /**16 pixeles**/
+    line-height: 1.5;
+}
+
+/**que todos los parrafos sean iguales**/
+p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--Blanco);
+}
+
+/**estos son los links**/
+a {
+    text-decoration: none;
+
+}
+img {
+    width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto; /**esto para centrarlo**/
+}
+
+/**ahora los headings, cambiamos su color, alineacion y fuente**/
+h1,h2,h3 {
+    text-align: center;
+    color: var(--RosaRojo);
+    font-family: var(--fuente);
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
