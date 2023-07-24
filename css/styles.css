@@ -40,7 +40,7 @@ a {
 
 }
 img {
-    width: 100%;
+    max-width: 100%;
 }
 .contenedor {
     max-width: 120rem;
@@ -61,4 +61,37 @@ h2 {
 }
 h3 {
     font-size: 2.4rem;
+}
+
+/**Header**/
+.header {
+
+    /**recordemos centrarlo horizontalmente**/
+    display: flex;
+    justify-content: center;
+}
+.header__logo {
+    margin: 3rem 0; /**separacion de 30 pixeles arriba y abajo y 0 de izquiera y derecha**/
+}
+/**Navegacion**/
+.Navegacion{
+    /**pongamos la barra con color y un ancho algo medio**/
+    background-color: var(--RosaPalido);
+    padding: 1rem 0;
+    
+    /**ordenemos sus elementos*/
+    display: flex;
+    justify-content: center;
+
+    /**usamos gap para separar mas sus elementos**/
+    gap: 2rem;
+}
+.Navegacion__enlace{
+    font-family: var(--fuente);
+    color: var(--Blanco);
+    font-size: 3rem;
+}
+/**ahora cuando el evento del cursor pasando encima de los enlaces, este cambiara su diseño**/
+.Navegacion__enlace:hover, .Navegacion__enlace--activo{
+    color: var(--RosaRojo);
 }
