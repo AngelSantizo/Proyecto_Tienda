@@ -111,3 +111,45 @@ h3 {
 .Navegacion__enlace:hover, .Navegacion__enlace--activo{
     color: var(--RosaRojo);
 }
+
+/** grid **/
+.grid{
+    /**mostraremos como un grid, de manera de columna, 2 elementos que ocupan 1 fraccion del 100%, osea 50-50**/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    /**agreguemos su separacion**/
+    gap: 2rem;
+}
+/**de una vez su media querie, para pantallas mas grandes de 768px, mostrar 3 elementos por columna**/
+@media (min-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+/** productos **/
+.producto{ /**este es el bloque**/
+    background-color: var(--RosaFuerte);
+    padding: 1rem;
+}
+/**sus elementos**/
+.producto__imagen{
+    width: 100%;
+}
+.producto__nombre{
+    font-size: 4rem;
+}
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--RosaRojo);
+}
+
+/**asignamos un diseño general para ambos**/
+.producto__nombre,
+.producto__precio {
+    font-family: var(--fuente);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
