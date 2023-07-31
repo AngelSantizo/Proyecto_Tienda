@@ -22,7 +22,8 @@ html {
 
 /**Globales**/
 body {
-    background-color: var(--Negro); /**color principal de la pagina, el background**/
+    /**Agreguemos mejor un background con degradado**/
+    background-image: linear-gradient(to top, var(--RosaPalido) 0%, var(--RosaRojo) 100% ); /**color principal de la pagina, el background**/
     font-size: 1.6rem; /**16 pixeles**/
     line-height: 1.5;
 }
@@ -130,7 +131,7 @@ h3 {
 
 /** productos **/
 .producto{ /**este es el bloque**/
-    background-color: var(--RosaFuerte);
+    background-color: var(--RosaRojo);
     padding: 1rem;
 }
 /**sus elementos**/
@@ -142,7 +143,7 @@ h3 {
 }
 .producto__precio{
     font-size: 2.8rem;
-    color: var(--RosaRojo);
+    color: var(--Blanco);
 }
 
 /**asignamos un diseño general para ambos**/
