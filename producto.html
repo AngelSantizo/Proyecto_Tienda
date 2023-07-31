@@ -30,7 +30,32 @@
     </nav>
 
     <main class="contenedor">
-        <h1>Producto</h1>
+        <h1>React JS</h1>
+
+        <div class="camisa">
+            <img class="camisa__imagen" src="img/4.jpg" alt="camisa imagen">
+
+            <div class="camisa__contenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus neque     arcu, tempus eu turpis sit amet, dictum sollicitudin nisi. Integer nec mi laoreet, vestibulum dolor id, pellentesque turpis. Fusce sed consectetur tortor. Nullam posuere massa in ante sodales varius a eu eros. In urna justo, pharetra sed enim a, feugiat gravida neque. Proin iaculis leo at ipsum euismod lobortis. Ut id odio tristique, sodales turpis ac, finibus purus. Nunc ac libero convallis, cursus nibh non, elementum arcu. Vestibulum vitae urna a lacus interdum finibus non a enim.</p>
+
+                <!--este es otro bloque independiente-->
+                <form class="formulario">
+                    <!--como los usuarios eligiran su talla utilizaremos select-->
+                    <select name="" id="">
+                        <!--es recomendable agregar un texto alternativo para que los usuarios sepan que hacer-->
+                        <option disabled selected>-- Seleccionar Talla --</option>
+                        <option>Mediana(M)</option>
+                        <option>Grande (L)</option>
+                        <option>Extra Grande (XL)</option>
+                    </select>
+                    <!--agregamos ahora la opcion de cantidades-->
+                    <input type="number" placeholder="Cantidad" min="1"> <!--el min es la cantidad minima que puede elegir, no menos-->
+
+                    <!--ahora agregamos el boton de submmit-->
+                    <input type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+        </div>
     </main>
     
     <footer class="footer">
