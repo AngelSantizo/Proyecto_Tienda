@@ -41,7 +41,7 @@
                 <!--este es otro bloque independiente-->
                 <form class="formulario">
                     <!--como los usuarios eligiran su talla utilizaremos select-->
-                    <select name="" id="">
+                    <select class="formulario__campo">
                         <!--es recomendable agregar un texto alternativo para que los usuarios sepan que hacer-->
                         <option disabled selected>-- Seleccionar Talla --</option>
                         <option>Mediana(M)</option>
@@ -49,10 +49,10 @@
                         <option>Extra Grande (XL)</option>
                     </select>
                     <!--agregamos ahora la opcion de cantidades-->
-                    <input type="number" placeholder="Cantidad" min="1"> <!--el min es la cantidad minima que puede elegir, no menos-->
+                    <input class="formulario__campo" type="number" placeholder="Cantidad" min="1"> <!--el min es la cantidad minima que puede elegir, no menos-->
 
                     <!--ahora agregamos el boton de submmit-->
-                    <input type="submit" value="Agregar al carrito">
+                    <input class="formulario__submit" type="submit" value="Agregar al carrito">
                 </form>
             </div>
         </div>
