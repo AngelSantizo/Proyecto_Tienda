@@ -203,3 +203,35 @@ h3 {
         grid-column: 2 / 3;
     }
 }
+
+/**Bloques**/
+.bloques {
+    display: grid;
+
+    /**aqui agregaremos 2 columnas, estamos haciendo de una vez la parte para pantallas pequeñas**/
+    grid-template-columns: repeat(2, 1fr);
+
+    /**agreguemos separacion entre ellos**/
+    gap: 2rem;
+}
+/**su respectivo MQ**/
+@media (min-width: 768px) {
+    .bloques{
+        /**para pantallas mas grandes de 768px que sean 4 columnas**/
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+.bloque {
+    /**centraremos el texto con la imagen de paso**/
+    text-align: center; /**ni yo sabia que tambien jalaba las imagenes jaja**/
+}
+.bloque_titulo {
+    margin: 0; /**haremos que el bloque este mas junto**/
+}
+
+/**modificaremos la imagen**/
+.bloque__imagen {
+    width: 100%; /**que ocupe todo el espacio disponible**/
+}
+
